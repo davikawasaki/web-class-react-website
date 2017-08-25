@@ -9,6 +9,10 @@ app.get('/',function(req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
+app.get('img/search.png', function(req, res) {
+  res.sendFile(__dirname + '/img/search.png');
+}) 
+
 app.get('*', function(req, res){
   res.redirect('/');
 });
